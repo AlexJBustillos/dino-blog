@@ -1,22 +1,16 @@
-import logo from './logo.svg';
+
 import './App.css';
 
-function App() {
+function App(props) {
+  console.log(props);
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <h1>{props.post.title}</h1>
+        <p>by {props.post.author}</p>
+        <p>by {props.post.body}</p>
+        <h2>Comment</h2>
+        <p>by {props.post.comments[0]}</p>
       </header>
     </div>
   );
