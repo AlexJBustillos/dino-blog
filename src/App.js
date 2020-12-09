@@ -2,6 +2,7 @@ import Dino from './Dino'
 import './App.css';
 
 function App(props) {
+  
   return (
     <div className="App">
       <Dino 

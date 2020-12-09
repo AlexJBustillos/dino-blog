@@ -10,6 +10,9 @@ const post = {
   body: "Check out this body property!",
   comments: ["First!", "Great Post", "Hire this author now"]
 };
+// const newComments = post.comments.forEach(element => {
+//   return element
+// })
 
 ReactDOM.render(
   <React.StrictMode>
